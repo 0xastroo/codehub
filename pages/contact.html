@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Turfzone - Contact Us</title>
+    <link rel="stylesheet" href="/public/styles/styles.css" />
+    <style>
+      body {
+        background-image: linear-gradient(to bottom, #1c1c1c, #333333);
+        font-family: "Arial", sans-serif;
+        color: #ddd;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        padding: 20px 0;
+      }
+
+      nav {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: transparent;
+      }
+
+      .logo img {
+        height: 30px;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+      }
+
+      nav li {
+        margin-left: 20px;
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      nav a:hover {
+        color: #28a745;
+      }
+
+      .contact-content {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 50px auto;
+      }
+
+      .contact-info {
+        flex: 1;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      }
+
+      .contact-info h2 {
+        color: #28a745;
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+
+      .contact-info p {
+        margin-bottom: 20px;
+      }
+
+      .contact-info img {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+
+      .contact-form {
+        flex: 1;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      }
+
+      .contact-form h2 {
+        color: #28a745;
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .contact-form input[type="text"],
+      .contact-form input[type="email"],
+      .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        background-color: #333;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        box-sizing: border-box;
+      }
+
+      .contact-form textarea {
+        height: 200px;
+      }
+
+      .contact-form input[type="submit"] {
+        background-color: #28a745;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .contact-form input[type="submit"]:hover {
+        background-color: #218838;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+    <nav>
+      <div class="logo">
+        <img src="/public/images/logo.png" alt="Logo">
+      </div>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/pages/turfs.html">Turfs</a></li>
+        <li><a href="/pages/pricing.html">Pricing</a></li>
+        <li><a href="/pages/about.html">About</a></li>
+        <li><a href="/pages/contact.html">Contact</a></li>
+        <li><a href="/pages/info.html">Info</a></li>
+        <li><a href="/pages/signin.html" class="sign-in">Sign In</a></li>
+        <li><a href="/pages/signup.html" class="sign-up">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <main>
+      <div class="contact-content">
+        <div class="contact-info">
+          <h2>Contact Information</h2>
+          <p>Feel free to reach out to us for any inquiries or assistance.</p>
+          <p>Email: info@turfzone.com</p>
+          <p>Phone: +123-456-7890</p>
+          <img src="location-map.jpg" alt="Location Map" />
+        </div>
+        <div class="contact-form">
+          <h2>Contact Us</h2>
+          <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Turfzone. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Turfzone - About Us</title>
+    <link rel="stylesheet" href="/public/styles/styles.css" />
+    <style>
+      body {
+        background-image: linear-gradient(to bottom, #1c1c1c, #333333);
+        font-family: "Arial", sans-serif;
+        color: #ddd;
+      }
+
+      .hero {
+        padding: 80px 0;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        animation: pulse 2s infinite alternate;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        100% {
+          transform: scale(1.05);
+        }
+      }
+
+      .about-content {
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        margin-bottom: 40px;
+        animation: fadeInUp 1s ease forwards;
+      }
+
+      @keyframes fadeInUp {
+        0% {
+          opacity: 0;
+          transform: translateY(50px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .about-content h2 {
+        color: #28a745;
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+
+      .about-content p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+      }
+
+      footer {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        border-top: 2px solid #28a745;
+        animation: slideInUp 1s ease forwards;
+      }
+
+      @keyframes slideInUp {
+        0% {
+          opacity: 0;
+          transform: translateY(50px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      footer p {
+        font-size: 14px;
+      }
+
+      .interactive-button {
+        background-color: #28a745;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+      }
+
+      .interactive-button:hover {
+        background-color: #218838;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="/public/images/logo.png" alt="Logo" />
+        </div>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/pages/turfs.html">Turfs</a></li>
+          <li><a href="/pages/pricing.html">Pricing</a></li>
+          <li><a href="/pages/about.html">About</a></li>
+          <li><a href="/pages/contact.html">Contact</a></li>
+          <li><a href="/pages/info.html">Info</a></li>
+          <li><a href="/pages/signin.html" class="sign-in">Sign In</a></li>
+          <li><a href="/pages/signup.html" class="sign-up">Sign Up</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero">
+        <h1>About Turfzone</h1>
+        <p>Discover our story and mission.</p>
+      </div>
+
+      <section class="about-content">
+        <h2>Our Story</h2>
+        <p>
+          Turfzone was founded in 2018 with a vision to revolutionize the way
+          people book and enjoy sports facilities. We recognized the need for a
+          convenient and user-friendly platform that connects sports enthusiasts
+          with high-quality turfs and venues.
+        </p>
+
+        <h2>Our Mission</h2>
+        <p>
+          Our mission is to provide a seamless and enjoyable experience for all
+          sports enthusiasts, making it easy to find and book the perfect turf
+          for their needs. We strive to build a vibrant community where people
+          can connect, compete, and pursue their passion for sports.
+        </p>
+
+        <h2>Our Team</h2>
+        <p>
+          At Turfzone, we have assembled a team of dedicated professionals with
+          a shared love for sports and technology. Our team members bring
+          diverse skill sets and expertise, ensuring that we deliver a top-notch
+          platform and exceptional customer service.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Turfzone. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {},
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav class="flex justify-between px-20 py-4">
+        <div class="logo">
+          <img
+            width="128px"
+            height="30px"
+            src="/public/images/logo.png"
+            alt="Logo"
+          />
+        </div>
+        <ul class="flex items-center gap-4">
+          <li><a href="/">Home</a></li>
+          <li><a href="/pages/turfs.html">Turfs</a></li>
+          <li><a href="/pages/pricing.html">Pricing</a></li>
+          <li><a href="/pages/about.html">About</a></li>
+          <li><a href="/pages/contact.html">Contact</a></li>
+          <li><a href="/pages/info.html">Info</a></li>
+          <li><a href="/pages/signin.html" class="bg-[#28a745] rounded-md px-3 py-2 text-white">Sign In</a></li>
+          <li><a href="/pages/signup.html" class="bg-[#28a745] rounded-md px-3 py-2 text-white">Sign Up</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>

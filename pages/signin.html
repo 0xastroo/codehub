@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turfzone - Sign In</title>
+    <link rel="stylesheet" href="/public/styles/styles.css">
+    <style>
+        body {
+            background-image: linear-gradient(to bottom, #1c1c1c, #333333);
+            font-family: 'Arial', sans-serif;
+            color: #ddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .sign-in-container {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            animation: fadeInUp 1s ease forwards;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .sign-in-container h2 {
+            color: #28a745;
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .sign-in-form input[type="text"],
+        .sign-in-form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #ddd;
+            font-size: 16px;
+        }
+
+        .sign-in-form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 16px;
+        }
+
+        .sign-in-form input[type="submit"]:hover {
+            background-color: #218838;
+        }
+
+        .sign-in-form .forgot-password {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+
+        .sign-in-form .forgot-password a {
+            color: #28a745;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .sign-in-form .forgot-password a:hover {
+            color: #218838;
+        }
+
+        .sign-in-form .no-account {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .sign-in-form .no-account a {
+            color: #28a745;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .sign-in-form .no-account a:hover {
+            color: #218838;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sign-in-container">
+        <form class="sign-in-form">
+            <h2>Sign In</h2>
+            <input type="text" placeholder="Username or Email" required>
+            <input type="password" placeholder="Password" required>
+            <div class="forgot-password">
+                <a href="#">Forgot Password?</a>
+            </div>
+            <input type="submit" value="Sign In">
+            <div class="no-account">
+                Don't have an account? <a href="signup.html">Sign Up</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

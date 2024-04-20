@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turfzone - Pricing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #fff;
+            background-image: linear-gradient(to bottom, #1c1c1c, #333333);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        header {
+            padding: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: transparent;
+        }
+
+        .logo img {
+            height: 30px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav a {
+            transition: color 0.3s ease;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        nav a:hover {
+            color: #28a745;
+        }
+
+        .sign-in,
+        .sign-up {
+            background-color: #28a745; /* Change background color */
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .sign-in:hover,
+        .sign-up:hover {
+            background-color: #218838; /* Change hover background color */
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .pricing-table {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .pricing-plan {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            flex: 0 0 30%;
+        }
+
+        .pricing-plan h2 {
+            color: #28a745;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .pricing-plan p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .pricing-plan .price {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .pricing-plan .button {
+            background-color: #28a745;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .pricing-plan .button:hover {
+            background-color: #218838;
+        }
+
+        footer {
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-top: 2px solid #28a745;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="turfs.html">Turfs</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="signin.html" class="sign-in">Sign In</a></li>
+                <li><a href="signup.html" class="sign-up">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="pricing-table">
+            <div class="pricing-plan">
+                <h2>Basic Plan</h2>
+                <p>Get started with basic features</p>
+                <div class="price">$19.99/month</div>
+                <a href="#" class="button">Get Started</a>
+            </div>
+            <div class="pricing-plan">
+                <h2>Pro Plan</h2>
+                <p>More features for professionals</p>
+                <div class="price">$39.99/month</div>
+                <a href="#" class="button">Get Started</a>
+            </div>
+            <div class="pricing-plan">
+                <h2>Premium Plan</h2>
+                <p>All features included</p>
+                <div class="price">$59.99/month</div>
+                <a href="#" class="button">Get Started</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Turfzone. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
