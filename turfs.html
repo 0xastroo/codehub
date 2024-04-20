@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turfzone - Turfs</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: linear-gradient(to bottom, #1c1c1c, #333333);
+            font-family: 'Arial', sans-serif;
+            color: #ddd;
+        }
+
+        .hero {
+            padding: 80px 0;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            animation: pulse 2s infinite alternate;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(1.05);
+            }
+        }
+
+        .turf-list {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            margin-bottom: 40px;
+            animation: fadeInUp 1s ease forwards;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .turf-card {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            width: 30%;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .turf-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .turf-card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .turf-card h3 {
+            color: #28a745;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .turf-card p {
+            font-size: 14px;
+            line-height: 1.4;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-top: 2px solid #28a745;
+            animation: slideInUp 1s ease forwards;
+        }
+
+        @keyframes slideInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="turfs.html">Turfs</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="signin.html" class="sign-in">Sign In</a></li>
+                <li><a href="signup.html" class="sign-up">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h1>Our Turfs</h1>
+            <p>Explore our wide range of high-quality turfs.</p>
+        </div>
+
+        <section class="turf-list">
+            <div class="turf-card">
+                <img src="bg.jpg" alt="Turf A">
+                <h3>Turf A</h3>
+                <p>Location: City A</p>
+                <p>Description: Description goes here</p>
+            </div>
+            <div class="turf-card">
+                <img src="bg.jpg" alt="Turf B">
+                <h3>Turf B</h3>
+                <p>Location: City B</p>
+                <p>Description: Description goes here</p>
+            </div>
+            <div class="turf-card">
+                <img src="bg.jpg" alt="Turf C">
+                <h3>Turf C</h3>
+                <p>Location: City C</p>
+                <p>Description: Description goes here</p>
+            </div>
+           
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Turfzone. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

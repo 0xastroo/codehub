@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turfzone - Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: linear-gradient(to bottom, #1c1c1c, #333333);
+            font-family: 'Arial', sans-serif;
+            color: #ddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .sign-up-container {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            animation: fadeInUp 1s ease forwards;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .sign-up-container h2 {
+            color: #28a745;
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .sign-up-form input[type="text"],
+        .sign-up-form input[type="email"],
+        .sign-up-form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #ddd;
+            font-size: 16px;
+        }
+
+        .sign-up-form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 16px;
+        }
+
+        .sign-up-form input[type="submit"]:hover {
+            background-color: #218838;
+        }
+
+        .sign-up-form .already-account {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .sign-up-form .already-account a {
+            color: #28a745;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .sign-up-form .already-account a:hover {
+            color: #218838;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sign-up-container">
+        <form class="sign-up-form">
+            <h2>Sign Up</h2>
+            <input type="text" placeholder="Username" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Confirm Password" required>
+            <input type="submit" value="Sign Up">
+            <div class="already-account">
+                Already have an account? <a href="signin.html">Sign In</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
